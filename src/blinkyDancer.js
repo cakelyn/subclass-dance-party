@@ -21,7 +21,7 @@
 var makeBlinkyDancer = function(top, left, dancerGif) {
   makeDancer.call(this, top, left, dancerGif);
 
-  this.$node.css("border", 'none').append('<img class="random" src= "' + dancerGif + '" height="200" max-width= "50%" max-height= "50%"/>');
+  this.$node.css('border', 'none').append('<img class="random" src= "' + dancerGif + '" height="200" max-width= "50%" max-height= "50%"/>');
 
 };
 
@@ -34,4 +34,8 @@ makeBlinkyDancer.prototype.step = function() {
 
   makeDancer.prototype.step.call(this);
   this.$node.toggle();
+};
+
+makeBlinkyDancer.prototype.spin = function() {
+  this.$node.animate({rotate:'180deg'});
 };

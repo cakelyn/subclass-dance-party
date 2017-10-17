@@ -20,8 +20,8 @@ $(document).ready(function() {
     // get the maker function for the kind of dancer we're supposed to make
     var dancerMakerFunction = window[dancerMakerFunctionName];
 
-    // make a dancer with a random position
 
+    // to make a dancer with a random position
     // append and random image tag to the dancer
     var dancerGifs = ['dancers/baby.gif',
                       'dancers/bunnies.gif',
@@ -34,7 +34,7 @@ $(document).ready(function() {
                       'dancers/zombie.gif'];
 
     var randomDancer = Math.floor(Math.random() * dancerGifs.length);
-    console.log(randomDancer);
+
 
     var dancer = new dancerMakerFunction(
       $('#dancefloor').height() * Math.random() - 50,
@@ -42,9 +42,9 @@ $(document).ready(function() {
       dancerGifs[randomDancer]
     );
 
-
     window.dancers.push(dancer);
-    console.log(window.dancers);
+    console.log(dancers);
+
     $('#dancefloor').append(dancer.$node);
   });
 
@@ -56,5 +56,28 @@ $(document).ready(function() {
       window.dancers[i].$node.css('top', '50%');
     }
   });
+
+  // var hue = 0;
+
+  // var partyMode = function() {
+  //   hue++;
+  //   for (var i = 0; i < window.dancers.length; i++) {
+  //     if (hue >= 360) {
+  //       hue = 0;
+  //     }
+  //     window.dancers[i].$node.css("-webkit-filter", "hue-rotate("+hue+"deg)");
+  //     setTimeout(partyMode, 1000);
+  //   }
+  // };
+
+  // $('.party').on('click', function(event) {
+  //   partyMode();
+  // });
+
+  $('#dancefloor').on('click','.random',function() {
+    $('.random').animate({height: '500'}, 1000);
+    $('.random').animate({height: '200'}, 1000);
+  });
+
 });
 
