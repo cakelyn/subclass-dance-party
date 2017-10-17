@@ -1,4 +1,9 @@
 body, html{
+  background: url('https://www.walldevil.com/wallpapers/a83/halloween-wallpaper-holidays-cemetery-desktop.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  overflow: auto;
   height:100%;
 }
 body{
@@ -14,6 +19,7 @@ body, a:link, a:visited, a:active{
   float:right;
 }
 .topbar{
+  font-family: "Nosifer";
   height:32px;
   background-color: #555;
 }
@@ -24,4 +30,44 @@ body, a:link, a:visited, a:active{
   border:10px solid red;
   border-radius:10px;
   position:absolute;
+}
+
+
+.rainbow {
+  /*font-family: 'Baloo Tammudu', cursive;*/
+  font-family: 'Nosifer', cursive;
+  font-size: 36px;
+   /* Chrome, Safari, Opera */
+  -webkit-animation: rainbow 1s infinite;
+
+  /* Internet Explorer */
+  -ms-animation: rainbow 1s infinite;
+
+  /* Standar Syntax */
+  animation: rainbow 1s infinite;
+}
+
+@-webkit-keyframes rainbow{
+  20%{color: red;}
+  40%{color: yellow;}
+  60%{color: green;}
+  80%{color: blue;}
+  100%{color: orange;}
+}
+/* Internet Explorer */
+@-ms-keyframes rainbow{
+  20%{color: red;}
+  40%{color: yellow;}
+  60%{color: green;}
+  80%{color: blue;}
+  100%{color: orange;}
+}
+
+/* Standar Syntax */
+@keyframes rainbow{
+  20%{color: red;}
+  40%{color: yellow;}
+  60%{color: green;}
+  80%{color: blue;}
+  100%{color: orange;}
 }
