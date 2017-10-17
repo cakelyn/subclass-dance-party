@@ -23,7 +23,7 @@ $(document).ready(function() {
     // make a dancer with a random position
 
     var dancer = new dancerMakerFunction(
-      $('body').height() * Math.random(),
+      $('body').height() * Math.random() + 125,
       $('body').width() * Math.random(),
       Math.random() * 1000
     );
@@ -37,7 +37,7 @@ $(document).ready(function() {
     // for each dancer
     // change height to 500
     for (var i = 0; i < window.dancers.length; i++) {
-      window.dancers[i].$node.css('top', '1200px');
+      window.dancers[i].$node.css('top', '50%');
     }
   });
 });
