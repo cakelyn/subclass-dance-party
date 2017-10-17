@@ -6,32 +6,58 @@ body, html{
   overflow: auto;
   height:100%;
 }
-body{
+
+a {
+  padding: 25px 10px 25px 10px;
+}
+
+a:link, a:visited, a:active {
+  color: lime;
+}
+
+body {
+  background-color: #444;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
   margin: 0px;
-  background-color:#444;
-  font-size: 18px;
 }
-body, a:link, a:visited, a:active{
-  color: lightblue;
+
+button {
+  background-color: #000;
+  border: 2px solid lime;
+  margin: 10px 20px;
+  padding: 5px;
+  text-transform: uppercase;
 }
-.title, .addDancerButton{
-  padding:5px 12px;
-  float:right;
+
+#dancefloor {
+  width: 90%;
+  height: 90%;
+  position: absolute;
 }
-.topbar{
-  font-family: "Nosifer";
-  height:32px;
-  background-color: #555;
-}
-.title{
-  background-color: #777;
-}
-.dancer{
+
+.dancer {
   border:10px solid red;
   border-radius:10px;
+  height: 100px;
   position:absolute;
 }
 
+.title {
+  color: lime;
+  font-family: "Nosifer", display;
+  font-size: 32px;
+  text-align: center;
+}
+
+.topbar{
+  background-color: #000;
+  height: 125px;
+  margin: 0 auto;
+  opacity: 0.5;
+  padding: 20px 10px;
+  text-align: center;
+}
 
 .rainbow {
   /*font-family: 'Baloo Tammudu', cursive;*/

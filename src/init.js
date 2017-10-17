@@ -28,21 +28,21 @@ $(document).ready(function() {
     );
 
     // append and random image tag to the dancer
-    this.dancers = ['dancers/baby.gif',
-                  'dancers/bunnies.gif',
-                  'dancers/frank.gif',
-                  'dancers/jellyskell.gif',
-                  'dancers/oogieboogie.gif',
-                  'dancers/pumpkinbooty.gif',
-                  'dancers/pumpkinskell.gif',
-                  'dancer/spook.gif',
-                  'dancer/vampire.gif',
-                  'dancer/zombie.gif'];
+    // this.dancers = ['dancers/baby.gif',
+    //               'dancers/bunnies.gif',
+    //               'dancers/frank.gif',
+    //               'dancers/jellyskell.gif',
+    //               'dancers/oogieboogie.gif',
+    //               'dancers/pumpkinbooty.gif',
+    //               'dancers/pumpkinskell.gif',
+    //               'dancer/spook.gif',
+    //               'dancer/vampire.gif',
+    //               'dancer/zombie.gif'];
 
-    window.dancers.append()
+    // window.dancers.append()
 
     window.dancers.push(dancer);
-
+    console.log(window.dancers);
     $('#dancefloor').append(dancer.$node);
   });
 
