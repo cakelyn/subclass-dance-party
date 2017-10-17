@@ -21,7 +21,7 @@
 var makeBlinkyDancer = function(top, left) {
   makeDancer.call(this, top, left);
 
-  this.$node.css("border", 'none').append('<img class = "random" src= "dancers/oogieboogie.gif"/>');
+  this.$node.css("border", 'none').append('<img class="random" src= "dancers/oogieboogie.gif" height="200" max-width= "50%" max-height= "50%"/>');
 
 };
 

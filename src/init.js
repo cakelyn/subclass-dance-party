@@ -23,13 +23,27 @@ $(document).ready(function() {
     // make a dancer with a random position
 
     var dancer = new dancerMakerFunction(
-      $('body').height() * Math.random() + 125,
-      $('body').width() * Math.random(),
-      Math.random() * 1000
+      $('#dancefloor').height() * Math.random(),
+      $('#dancefloor').width() * Math.random() - 50
     );
+
+    // append and random image tag to the dancer
+    this.dancers = ['dancers/baby.gif',
+                  'dancers/bunnies.gif',
+                  'dancers/frank.gif',
+                  'dancers/jellyskell.gif',
+                  'dancers/oogieboogie.gif',
+                  'dancers/pumpkinbooty.gif',
+                  'dancers/pumpkinskell.gif',
+                  'dancer/spook.gif',
+                  'dancer/vampire.gif',
+                  'dancer/zombie.gif'];
+
+    window.dancers.append()
+
     window.dancers.push(dancer);
-    console.log(dancers);
-    $('body').append(dancer.$node);
+
+    $('#dancefloor').append(dancer.$node);
   });
 
   $('.lineUpDancers').on('click', function(event) {
