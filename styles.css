@@ -31,9 +31,9 @@ button {
 }
 
 #dancefloor {
-  width: 90%;
-  height: 90%;
+  height: 80%;
   position: absolute;
+  width: 90%;
 }
 
 .dancer {

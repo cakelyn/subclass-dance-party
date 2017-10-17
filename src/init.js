@@ -22,24 +22,26 @@ $(document).ready(function() {
 
     // make a dancer with a random position
 
+    // append and random image tag to the dancer
+    var dancerGifs = ['dancers/baby.gif',
+                      'dancers/bunnies.gif',
+                      'dancers/frank.gif',
+                      'dancers/jellyskell.gif',
+                      'dancers/oogieboogie.gif',
+                      'dancers/pumpkinbooty.gif',
+                      'dancers/pumpkinskell.gif',
+                      'dancers/vampire.gif',
+                      'dancers/zombie.gif'];
+
+    var randomDancer = Math.floor(Math.random() * dancerGifs.length);
+    console.log(randomDancer);
+
     var dancer = new dancerMakerFunction(
-      $('#dancefloor').height() * Math.random(),
-      $('#dancefloor').width() * Math.random() - 50
+      $('#dancefloor').height() * Math.random() - 50,
+      $('#dancefloor').width() * Math.random(),
+      dancerGifs[randomDancer]
     );
 
-    // append and random image tag to the dancer
-    // this.dancers = ['dancers/baby.gif',
-    //               'dancers/bunnies.gif',
-    //               'dancers/frank.gif',
-    //               'dancers/jellyskell.gif',
-    //               'dancers/oogieboogie.gif',
-    //               'dancers/pumpkinbooty.gif',
-    //               'dancers/pumpkinskell.gif',
-    //               'dancer/spook.gif',
-    //               'dancer/vampire.gif',
-    //               'dancer/zombie.gif'];
-
-    // window.dancers.append()
 
     window.dancers.push(dancer);
     console.log(window.dancers);

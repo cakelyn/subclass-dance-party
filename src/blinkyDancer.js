@@ -18,10 +18,10 @@
 //   return blinkyDancer;
 // };
 
-var makeBlinkyDancer = function(top, left) {
-  makeDancer.call(this, top, left);
+var makeBlinkyDancer = function(top, left, dancerGif) {
+  makeDancer.call(this, top, left, dancerGif);
 
-  this.$node.css("border", 'none').append('<img class="random" src= "dancers/oogieboogie.gif" height="200" max-width= "50%" max-height= "50%"/>');
+  this.$node.css("border", 'none').append('<img class="random" src= "' + dancerGif + '" height="200" max-width= "50%" max-height= "50%"/>');
 
 };
 

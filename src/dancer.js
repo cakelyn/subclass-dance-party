@@ -32,9 +32,10 @@
 // };
 
 
-var makeDancer = function(top, left) {
+var makeDancer = function(top, left, dancerGif) {
   this.top = top;
   this.left = left;
+  this.dancerGif = dancerGif;
 
   this.$node = $('<span class="dancer"></span>');
   this.step();
